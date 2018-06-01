@@ -6,6 +6,8 @@
     </head>
 
     <body>
-        @yield('content')
+       @include('commons.error_tasks')
+       
+       @yield('content')
     </body>
 </html>
