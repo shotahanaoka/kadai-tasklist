@@ -4,7 +4,8 @@
 
 <h1>id = {{ $task->id }} 's editing page</h1>
 
-    <p>{{ $task->content }}</p>
+     <p>Status: {{ $task->status }}</p>
+    <p>Message: {{ $task->content }}</p>
     
     {!! link_to_route('tasks.edit', 'Edit message', ['id' => $task->id]) !!}
     
