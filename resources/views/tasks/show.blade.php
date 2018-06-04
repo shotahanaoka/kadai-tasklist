@@ -7,15 +7,15 @@
      <table class="table table-bordered">
         <tr>
             <th>id</th>
-            <td>{{ $message->id }}</td>
+            <td>{{ $task->id }}</td>
         </tr>
         <tr>
             <th>タイトル</th>
-            <td>{{ $message->title }}</td>
+            <td>{{ $task->title }}</td>
         </tr>
         <tr>
             <th>メッセージ</th>
-            <td>{{ $message->content }}</td>
+            <td>{{ $task->content }}</td>
         </tr>
     </table>
     
