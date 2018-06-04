@@ -4,15 +4,22 @@
 
 <h1>id: {{ $task->id }} 's editing page</h1>
 
+<div class="row">
+        <div class="col-xs-6">
+
     {!! Form::model($task, ['route' => ['tasks.update', $task->id], 'method' => 'put']) !!}
 
-        {!! Form::label('status', 'status:') !!}
-        {!! Form::text('status') !!}
+         <div class="form-group">
+                    {!! Form::label('title', 'タイトル:') !!}
+                    {!! Form::text('title', null, ['class' => 'form-control']) !!}
+                </div>
         
-        {!! Form::label('content', 'Message:') !!}
-        {!! Form::text('content') !!}
-
-        {!! Form::submit('refresh') !!}
+                <div class="form-group">
+                    {!! Form::label('content', 'メッセージ:') !!}
+                    {!! Form::text('content', null, ['class' => 'form-control']) !!}
+                </div>
+        
+                {!! Form::submit('更新', ['class' => 'btn btn-default']) !!}
 
     {!! Form::close() !!}
 
