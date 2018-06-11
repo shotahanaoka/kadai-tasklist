@@ -22,8 +22,8 @@
                             </ul>
                         </li>
                     @else
-                        <li> <span class="glyphicon glyphicon-user" aria-hidden="true">{!! link_to_route('signup.get', 'Sign up') !!}</span></li>
-                        <li>  <span class="glyphicon glyphicon-ok" aria-hidden="true">{!! link_to_route ('login','Login') !!}</span></li>
+                        <li> {!! link_to_route('signup.get', 'Sign up') !!}</li>
+                        <li> {!! link_to_route ('login','Login') !!}</li>
                     @endif
                 </ul>
             </div>

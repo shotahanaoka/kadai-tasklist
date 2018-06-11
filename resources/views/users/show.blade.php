@@ -23,9 +23,9 @@
                   {!! Form::open(['route' => 'tasks.store']) !!}<br>
                       <div class="form-group">
                           <label class="col-xs-4 control-label">STATUS</label>
-                          {!! Form::textarea('status', old('status'), ['class' => 'form-control', 'placeholder'=> "wshat's your duty?",'rows' => '1']) !!}<br>
+                          {!! Form::textarea('status', old('status'), ['class' => 'form-control', 'placeholder'=> "What's your duty?",'rows' => '1']) !!}<br>
                           <label class="col-xs-4 control-label">CONTENT</label>
-                          {!! Form::textarea('content', old('content'), ['class' => 'form-control' , 'placeholder'=> "what do you have to do?", 'rows' => '2']) !!}<br>
+                          {!! Form::textarea('content', old('content'), ['class' => 'form-control' , 'placeholder'=> "What do you have to do?", 'rows' => '2']) !!}<br>
                           {!! Form::submit('Post', ['class' => 'btn btn-primary btn-block']) !!}
                       </div>
                   {!! Form::close() !!}
